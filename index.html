@@ -7,10 +7,15 @@
 <body>
 	<div id="app">
 		{{ message }}
-		{{ pur }}
 		<ul>
 			<li v-for="hendek in list">{{hendek}}</li>
 		</ul>
+		<p v-show="seen">Le booléen shov</p>
+		<p v-if="seen">Le booléen</p>
+		<p v-else="seen">Non afficher</p>
+		<p v-text="pur"></p>
+		<p v-html="pur"></p>
+
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.js"></script>
